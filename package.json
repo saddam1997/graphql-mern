@@ -1,0 +1,50 @@
+{
+  "name": "Bookevent",
+  "version": "1.0.0",
+  "description": "Create, read and book events",
+  "main": "src/index.js",
+  "scripts": {
+    "server:dev": "nodemon --exec node src/index.js --ignore client",
+    "build": "NODE_ENV=production webpack --mode production",
+    "build:dev": "NODE_ENV=development webpack --mode development",
+    "dev": "webpack-dev-server --mode development --open",
+    "postinstall": "npm run build",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "efren.sanchezgon@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^1.1.1",
+    "cross-env": "^5.2.0",
+    "dataloader": "^1.4.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.12",
+    "morgan": "^1.9.1",
+    "react": "^16.8.2",
+    "react-chartjs": "^1.2.0",
+    "react-dom": "^16.8.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "nodemon": "^1.18.10",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0"
+  }
+}
